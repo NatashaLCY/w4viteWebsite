@@ -1,0 +1,72 @@
+nav {
+  /* height: 80px; */
+  background: #aa0601;
+  padding: 16px 0;
+  @include mobile-larger{
+    padding: 16px 0 0 0;
+  }
+}
+
+.navBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mobile-larger{
+    display: block;
+  }
+}
+
+.menuUl {
+  display: flex;
+  @include mobile-larger{
+    flex-wrap: wrap;
+  }
+}
+
+h1 a {
+  display: block;
+  background-image: url(../images/logo-white.png);
+  width: 80px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    padding: 16px 15px;
+  }
+}
+
+.menuUl li {
+  color: #fff;
+  font-size: 20px;
+  @include mobile-larger{
+    font-size: 16px;
+    border: 1px solid #fff;
+    width: 50%;
+    margin-right: 0;
+    // padding: 12px 0px;
+    text-align: center;
+  }
+  a {
+    padding: 25px 16px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .mr-16 {
+    margin-right: 0px;
+  }
+}

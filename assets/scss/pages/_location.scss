@@ -1,0 +1,113 @@
+.title{
+    border-left: 8px solid #9F1213;
+
+}
+.selectCity{
+    margin-top: 33px;
+    margin-bottom: 41px;
+    @include ipad{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.selectCity {
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 24px;
+        vertical-align: middle;
+        margin-right: 16px;
+        @include mobile{
+            font-size: 16px;
+            margin-right: 8px;
+        }    
+    }
+    select {
+        color: #495057;
+        width: 300px;
+        font-size: 18px;
+        padding: 8px 19px 8px 12px;
+        position: relative;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background-image: url("/assets/images/icon-down-arrow-triangle.svg"), linear-gradient(#ffffff, #ffffff);
+        background-image: url("/assets/images/icon-down-arrow-triangle.svg"), -webkit-linear-gradient(#ffffff, #ffffff);
+        background-image: url("/assets/images/icon-down-arrow-triangle.svg"), -moz-linear-gradient(#ffffff, #ffffff);
+        background-position: right 1.2em top 50%, 0 0;
+        background-size: 10px 5px;
+        background-repeat: no-repeat, repeat;
+        border: 1px solid #CED4DA;
+        @include mobile{
+            width: 78%;
+        }
+        option {
+            appearance: none;
+            background: #fff;
+            position: absolute;
+        }
+    }
+}
+
+
+
+.locationBox{
+    margin: 0 -12px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.locationCard{
+    width: calc(33.33% - 24px);
+    margin-right:  12px;
+    margin-left:  12px;
+    @include ipad{
+        width: calc(50% - 24px);
+    }
+    @include mobile{
+        width: 100%;
+    }
+    p{
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    .moreInfo {
+        background-color: #000;
+        color: #fff;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            background-color: #505050;
+        }
+    }
+}
+
+.cardBorder{
+    border: 1px solid #00000020;
+    p {
+        display: flex;
+        vertical-align: middle;
+        font-size: 20px;
+        // align-items: center;
+        span{
+            font-size: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+            padding-top: 4px;
+        }
+    }
+}
+.storeName {
+    padding: 8px 24px;
+}
+.storeInfo{
+    padding: 24px;
+    @include mobile{
+        padding: 16px 24px;
+    }
+}

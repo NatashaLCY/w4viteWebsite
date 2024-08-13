@@ -1,0 +1,111 @@
+footer {
+  background-color: #aa0601;
+  padding: 48px 0 32px 0;
+  @include mobile-larger{
+    padding: 24px 0;
+  }
+}
+
+.footerBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 32px 0;
+  @include mobile-larger {
+    padding: 0 0 24px 0;  
+  }
+}
+@media (max-width: 767px) {
+  .fMenu {
+    display: none;
+  }
+}
+
+.fMenu ul {
+  display: flex;
+  li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 20px 0;
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  li {
+      width: 48px;
+      @include mobile-larger{
+        width: 24px;
+      }
+  }
+}
+
+@media (max-width: 767px) {
+  .mr-8 {
+    margin-right: 8px;
+  }
+}
+
+.tel {
+  padding: 36px 0 0 0;
+  @include mobile-larger{
+    padding: 0;
+  }
+}
+
+.tel,
+.mail {
+  color: #fff;
+  font-size: 36px;
+  padding-top: 8px;
+  @include mobile-larger{
+    font-size: 16px;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.tel p span,
+.mail p span {
+  padding-right: 22px;
+  color: #fff;
+  font-size: 36px;
+  vertical-align: middle;
+  @include mobile-larger{
+    padding-right: 11px;
+    font-size: 24px;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  padding: 32px 0 0 0;
+  @include mobile-larger{
+    display: block;
+    padding: 16px 0 0 0;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.privacy {
+  display: flex;
+  @include mobile-larger{
+    display: block;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0;
+  }
+  li {
+    padding-top: 8px;
+  }
+}
